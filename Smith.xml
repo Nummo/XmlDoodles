@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?> <!-- A prolog defines the XML version and the character encoding -->
+
+<reciepes> <!-- root element -->
+	<receipe category="starters"> <!-- element / child -->
+	</receipe>
+	<receipe category="mains"> <!-- element -->
+		<generalInfo> <!-- child-element / sub-child -->
+			<author lang="en"> Delia Smith</author>
+			<source> </source>
+			<descrip> </descrip>
+		</generalInfo>
+		<food> <!-- child-element -->
+			<dietaryRequir>
+			</dietaryRequir>
+			<beans>
+			</beans>
+			<confections>
+			</confections>
+			<dairy>
+			</dairy>
+			<fruits>
+			</fruits>
+			<grains>
+			</grains>
+			<meat>
+			</meat>
+			<seasoning>
+			</seasoning>
+			<vegetables>
+			</vegetables>
+			<water>
+			</water>
+		</food>
+		<method> <!-- child-element -->
+			<prep>
+			</prep>
+			<instrutions>
+			</instrutions>
+			<equipment>
+				<electronics> </electronics>
+			</equipment>
+		</method>
+		<ingredients> <!-- child-element -->
+		</ingredients>
+	</mains>
+	<receipe category="desserts">
+	</receipe>
+</reciepes>
