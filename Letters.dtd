@@ -1,0 +1,3 @@
+<!ELEMENT letters (letter+)>
+<!ELEMENT letter(recipent, body,sender)>
+<!ELEMENT recipent() >

@@ -1,0 +1,26 @@
+<recipes>
+	<mains dietRequi="none">
+		<generalInfo>
+			<title> </title>
+			<publication source="link"> </publication>
+			<creator name="surname"> </creator>
+			<creator name="firstname"> </creator>
+			<img> </img>
+		</generalInfo>
+		<method>
+			<prep>
+				<serving serves="feeds"> </serving>
+				<tools device="oven"> </tools>
+				<
+			</prep>
+			<instruc>
+			</instruc>
+			<equip>
+			</equip>
+		</method>
+		<food>
+		</food>
+		<ingre> 
+		</ingre>		
+	</mains>
+</recipes>
