@@ -1,3 +1,37 @@
 <!ELEMENT letters (letter+)>
-<!ELEMENT letter(recipent, body,sender)>
-<!ELEMENT recipent() >
+  <!ELEMENT letter(recipient, body, sender)>
+    <!ELEMENT recipient(recipientName, recipientAdd)>
+      <!ELEMENT recipientName(firstName, lastName)>
+        <!ELEMENT firstName (#PCDATA)>
+        <!ELEMENT lastName (#PCDATA)>
+      <!ELEMENT recipientAdd(streetNo, streetName, area, city, postalCode, country)>
+        <!ELEMENT streetNo (#PCDATA)>
+        <!ELEMENT streetName (#PCDATA)>
+        <!ELEMENT area (#PCDATA)>
+        <!ELEMENT city (#PCDATA)>
+        <!ELEMENT postalCode (#PCDATA)>
+        <!ELEMENT country (#PCDATA)> <!-- this should be optional -->
+    <!ELEMENT body(date, openSalu, recipientName, letterTitle, content)>
+      <!ELEMENT date(#PCDATA)>
+      <!ELEMENT openSalu(#PCDATA)>
+      <!ELEMENT recipientName(firstName, lastName)>
+        <!ELEMENT firstName (#PCDATA)>
+        <!ELEMENT lastName (#PCDATA)>
+      <!ELEMENT letterTitle(#PCDATA)>
+      <!ELEMENT content(#PCDATA)>
+    <!ELEMENT sender(closeSalu, senderName, senderInfo)>
+      <!ELEMENT closeSalu(#PCDATA))>
+      <!ELEMENT senderName(firstName, lastName)>
+        <!ELEMENT firstName (#PCDATA)>
+        <!ELEMENT lastName (#PCDATA)>
+      <!ELEMENT senderInfo(senderTitle, senderName, senderAdd)>
+  <!-- in the case of repeating an element e.g senderName do I need to declare individual elements again -->
+        <!ELEMENT senderTitle (#PCDATA)>
+  <!-- do elements need to be unique e.g address details -->
+        <!ELEMENT senderAdd (streetNo, streetName, area, city, postalCode, country)>
+          <!ELEMENT streetNo (#PCDATA)>
+          <!ELEMENT streetName (#PCDATA)>
+          <!ELEMENT area (#PCDATA)>
+          <!ELEMENT city (#PCDATA)>
+          <!ELEMENT postalCode (#PCDATA)>
+          <!ELEMENT country (#PCDATA)> <!-- this should be optional -->

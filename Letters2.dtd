@@ -1,0 +1,27 @@
+<!ELEMENT letters (letter+)>
+  <!ELEMENT letter(recipient, body, sender)>
+    <!ELEMENT recipient(recipientName, recipientAdd)>
+      <!ELEMENT recipientName(#PCDATA)>
+        <!ATLIST recipientName firstName PCDATA #Required>
+        <!ATLIST recipientName lastName PCDATA #Required>
+      <!ELEMENT recipientAdd(#PCDATA)>
+        <!ATLIST recipientAdd streetNo PCDATA #Required>
+        <!ATLIST recipientAdd streetName PCDATA #Required>
+        <!ATLIST recipientAdd area PCDATA #Implied>
+        <!ATLIST recipientAdd city PCDATA #Required>
+        <!ATLIST recipientAdd postalCode PCDATA #Required>
+        <!ATLIST recipientAdd country PCDATA #Implied>
+    <!ELEMENT body(date, openSalu, recipientName, letterTitle, content)>
+      <!ELEMENT date (#PCDATA)>
+      <!ELEMENT openSalu (#PCDATA)>
+      <!ELEMENT recipientName (#PCDATA)>
+        <!ATLIST recipientName firstName PCDATA #Required>
+        <!ATLIST recipientName lastName PCDATA #Required>
+      <!ELEMENT letterTitle (#PCDATA)>
+      <!ELEMENT content (#PCDATA)>
+    <!ELEMENT sender(closeSalu, senderName, senderInfo)>
+      <!ELEMENT closeSalu(#PCDATA)>
+      <!ELEMENT senderName(#PCDATA)>
+        <!ATLIST senderName firstName PCDATA #Required>
+        <!ATLIST senderName lastName PCDATA #Required>
+      <!ELEMENT senderInfo(#PCDATA)>
